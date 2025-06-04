@@ -22,6 +22,21 @@ public class deletion {
         head = head.next;
     }
 
+    // Deletion in between in Linked list
+    public void deletionBetween(int index) {
+        Node current = head;
+        int count = 0;
+
+        while (count < index - 2 && current != null) {
+            current = current.next;
+            count++;
+        }
+
+        if (current.next != null)
+            current.next = current.next.next;
+
+    }
+
     // Delete at last
     public void deleteLast() {
         Node current = head;
@@ -61,11 +76,18 @@ public class deletion {
         obj.addFirst(25);
         obj.addFirst(77);
         obj.addFirst(11);
+        obj.addFirst(21);
+        obj.addFirst(15);
+        obj.addFirst(87);
+        obj.addFirst(61);
 
         obj.display();
         obj.deleteFirst();
         obj.display();
         obj.deleteLast();
+        obj.display();
+
+        obj.deletionBetween(2);
         obj.display();
     }
 }
