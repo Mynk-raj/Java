@@ -1,0 +1,6 @@
+#  Nano is, simple command-line text editor used primerly on Linux.
+    But it is a edior where you can create a file using nano command and one more thing that you can use it in your commnad propt in window to Mayank.
+
+# you can use touch command for file creation :  touch demo.java
+
+# you can use mkdir(make directory ) command for folder creation :  mkdir demo
