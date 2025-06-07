@@ -105,12 +105,13 @@ public class deletionAll {
 
         if (head.data == value) {
             head = head.next;
+            return;
         }
 
         Node current = head;
-        while (current != null) {
+        while (current.next != null) {
             if(current.next.data == value){
-                current = current.next;
+                current.next = current.next.next;
                 return;
             }else{
                 current = current.next;
@@ -120,9 +121,48 @@ public class deletionAll {
 
     }
 
+    // searching code in linked list 
+    public boolean search(int search){
+        Node current = head;
+
+        if(current == null){
+            System.out.println("List is empty !");
+            return false;
+        }
+ 
+
+        while (current != null) {
+            if(current.data == search){
+                return true;
+            }
+                current = current.next;
+            
+        }
 
 
+        return false;
+    }
 
+
+    // code for checking length of linked list 
+    public int length(){
+
+        Node current = head;
+           int count = 0;
+
+        if(current == null){
+            return count;
+
+        }
+     
+        while(current != null){
+            count++;
+            current = current.next;
+        }
+        
+
+        return count;
+    }
 
     // display
     public void display() {
@@ -133,6 +173,30 @@ public class deletionAll {
         }
         System.out.println("null");
     }
+
+
+    // reversing the linked list 
+    public void reverse(){
+        Node prev = null;
+        Node current = head;
+
+        if (current == null) {
+            System.out.println("list is empty !");
+            return;
+        }
+
+        while (current != null) {
+            Node next = current.next;
+            current.next = prev;
+            
+            prev = current;
+            current = next;
+        }
+
+        head = prev;
+
+    }
+
 
     public static void main(String[] args) {
 
@@ -145,6 +209,7 @@ public class deletionAll {
         obj.addbetween(2, 4);
         obj.addbetween(4, 52);
         obj.addbetween(1, 2);
+        obj.addbetween(1, 2);
 
         obj.display();
 
@@ -152,5 +217,13 @@ public class deletionAll {
         obj.deleteLast();
 
         obj.display();
+
+        obj.deleteByValue(12);
+
+        obj.display();
+
+
+        obj.search(44);
+
     }
 }
