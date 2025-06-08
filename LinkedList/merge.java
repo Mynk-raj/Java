@@ -41,10 +41,28 @@ public class merge {
 
     }
 
+    public void display(){
+        Node current = head1;
+        
+    }
 
     public static void main(String[] args) {
         merge obj = new merge();
         
-        obj.addLastNode1(44);
+        obj.addLastNode1(1);
+        obj.addLastNode1(2);
+        obj.addLastNode1(3);
+        obj.addLastNode1(4);
+        obj.addLastNode1(5);
+
+
+        obj.addLastNode2(5);
+        obj.addLastNode2(6);
+        obj.addLastNode2(7);
+        obj.addLastNode2(8);
+        obj.addLastNode2(9);
+
+        
+        
     }
 }

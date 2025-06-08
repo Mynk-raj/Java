@@ -1,94 +1,88 @@
-📦 Stage 1: Advanced Linked List Variants
-Doubly Linked List
+# 🚀 DSA Mastery Roadmap
 
-Insert at head/tail
 
-Delete from head/tail
+## 📦 **Stage 1: Advanced Linked List Variants**
 
-Reverse doubly list
+### 🔁 **Doubly Linked List**
+- 🟢 **Insert at Head / Tail**
+- 🟢 **Delete from Head / Tail**
+- 🟢 **Reverse Doubly Linked List**
 
-Circular Linked List
+### 🔄 **Circular Linked List**
+- 🟢 **Insertion**
+- 🟢 **Traversal**
+- 🟢 **Loop-Based Use Cases**
 
-Insertion
+---
 
-Traversal
+## 📦 **Stage 2: Stack & Queue**
 
-Loop-based use cases
+### 📚 **Stack**
+- 🟢 **Using Arrays**
+- 🟢 **Using Linked List**
+- 🟢 **Infix to Postfix Conversion**
+- 🟢 **Balanced Parentheses Check**
 
-📦 Stage 2: Stack & Queue
-Built-in and Linked List-based implementation
+### 📥 **Queue**
+- 🟢 **Using Arrays**
+- 🟢 **Circular Queue**
+- 🟢 **Using Linked List**
 
-Stack
+### ⚖️ **Other Queues**
+- 🟢 **Deque (Double-Ended Queue)**
+- 🟢 **Priority Queue**
 
-Using arrays
+---
 
-Using linked list
+## 📦 **Stage 3: Recursion**
 
-Infix to postfix conversion
+### 🔁 **Core Concepts**
+- 🟢 **Recursion Basics**
+- 🟢 **Factorial, Fibonacci, Power Functions**
+- 🟢 **Recursion Tree Tracing Problems**
 
-Balanced parentheses check
+### 🔙 **Backtracking**
+- 🟢 **N-Queens Problem**
+- 🟢 **Rat in a Maze / Maze Solver**
 
-Queue
+---
 
-Using arrays
+## 📦 **Stage 4: Sorting Algorithms**
 
-Circular queue
+- 🟢 **Selection Sort, Bubble Sort, Insertion Sort**
+- 🟢 **Merge Sort (Recursive Approach)**
+- 🟢 **Quick Sort**
+- 🟢 **Counting Sort, Radix Sort**
+- 🟢 **In-Place and Stable Sorting Concepts**
 
-Using linked list
+---
 
-Deque (double-ended queue)
+## 📦 **Stage 5: Binary Search**
 
-Priority Queue
+- 🟢 **Basic Binary Search**
+- 🟢 **First and Last Occurrence**
+- 🟢 **Search in Rotated Sorted Array**
+- 🟢 **Square Root using Binary Search**
+- 🟢 **Upper Bound / Lower Bound**
 
-📦 Stage 3: Recursion
-Recursion basics
+---
 
-Factorial, Fibonacci, power functions
+## 📦 **Stage 6: Arrays & Strings Problems**
 
-Recursion tree trace problems
+- 🟢 **Sliding Window Technique**
+- 🟢 **Two Pointer Approach**
+- 🟢 **Kadane’s Algorithm (Max Subarray)**
+- 🟢 **Prefix Sum, Hashing**
+- 🟢 **Pattern Matching, Anagram, Palindrome Problems**
 
-Backtracking intro (N-Queens, Maze)
+---
 
-📦 Stage 4: Sorting Algorithms
-Selection, Bubble, Insertion Sort
+## 🔥 **Stage 7 & Beyond: DSA Pro Level**
 
-Merge Sort (recursive)
+- 🌳 **Trees** (Binary Tree, BST, Heap)
+- 🌐 **Graphs** (BFS, DFS, Dijkstra’s Algorithm)
+- 🧠 **Dynamic Programming** (Knapsack, LIS, Memoization & Tabulation)
+- 📚 **Tries**, **Segment Trees**, **Disjoint Set Union (DSU)**
+- 🎯 **Interview Mock Problems & Case Studies**
 
-Quick Sort
-
-Count Sort, Radix Sort
-
-In-place and stable sorting concepts
-
-📦 Stage 5: Binary Search
-Basic binary search
-
-First and last occurrence
-
-Search in rotated sorted array
-
-Square root using binary search
-
-Upper/lower bound
-
-📦 Stage 6: Arrays & Strings Problems
-Sliding window
-
-Two pointer
-
-Kadane’s Algorithm
-
-Prefix sum, hashing
-
-Pattern matching, anagram, palindrome problems
-
-🔥 Stage 7 & Beyond (DSA Pro Level)
-Trees (Binary Tree, BST, Heap)
-
-Graphs (BFS, DFS, Dijkstra)
-
-Dynamic Programming (Knapsack, LIS)
-
-Tries, Segment Trees, Disjoint Set
-
-Interview mock problems
+---
