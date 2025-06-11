@@ -25,4 +25,7 @@ public class num {
         print(num); 
         fact(num);
     }
+
+
+    
 }
