@@ -8,12 +8,6 @@ public class fabonaci {
 
         for (int i = 0; i < num; i++) {
 
-            c += a + b;
-            a = b;
-            b = c;
-
-        }
-
         return c;
 
     }
