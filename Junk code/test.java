@@ -2,6 +2,12 @@ import java.util.Scanner;
 
 public class test {
    
+    //Fabonaci seies using recurison
+    public static void fabo(){
+        int a = 1 ;
+        int b = 1 ;
+    }
+
     //Sum of nth term using recurion
     public static int sum(int num){
         if(num == 1){
