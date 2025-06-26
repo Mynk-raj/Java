@@ -1,4 +1,4 @@
-class LLpractice {
+class linkedList {
 
     public static class Node {
         int data;
@@ -224,32 +224,38 @@ class LLpractice {
         // some advance question of linked list 
         public static boolean palindrome(){
 
+            if(head == null || head.next == null){
+                return true;
+            }
+
+            
+
 
             return true;
         }
 
         // find middle
-        public static int middle(){
+        public static Node middle(){
 
            Node slow = head;
            Node fast = head;
            int count = 0;
 
            Node current = head;
-           while (current != null) {
+           while (current.next != null || current.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
             count++;
            }
 
-           return count;
+           return slow;
         }
 
     }
 
     public static void main(String[] args) {
 
-        LLpractice a = new LLpractice();
+        linkedList a = new linkedList();
         LL obj = a.new LL();
 
         obj.addFirst(44);
