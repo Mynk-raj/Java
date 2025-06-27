@@ -54,11 +54,11 @@ public class recursion {
         // }
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > arr[i+1]) {
+            if (arr[i] > arr[i + 1]) {
                 largest = arr[i];
-                second = arr[i+1];
-                if(largest == second){
-                    
+                second = arr[i + 1];
+                if (largest == second) {
+
                 }
             }
         }
@@ -68,39 +68,27 @@ public class recursion {
     }
 
     public static void main(String[] args) {
-        // table(2);
-        // System.out.println(power(5));
-        // int arr[] = { 4, 2, 6, 1, 3, 5, };
 
+        int arr[] = { 8, 2, 6, 4, 3, 5, 2 }; // 6,6,6,5,5
+        int k = 3;
+        int val[] = new int[arr.length - k + 1];
 
-        int arr[] = { 4, 2, 6, 4, 3, 5, 2 };
-        int k = 2;
-        // int count = 0;
-        // for(int i = 0 ; i<arr.length; i++){
-        //     if(arr[i] == k){
-        //         arr[i] = 0;
-        //         count++;
-        //     }else{
-        //         continue;
-        //     }
-        // }
+        for (int i = 0; i < arr.length - k + 1; i++) {
 
-        int val[] = new int[2];
+            int largest = arr[i];
 
-        for(int i = 0; i<arr.length ; i++){
-            if(arr[i] == 2){
-                val[0] = i;
-                
+            for (int j = i; j < i + k; j++) {
+                if (arr[j] > largest) {
+                    largest = arr[j];
+                }
             }
-         
-        }
 
+            val[i] = largest;
+        }
 
         for (int i : val) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
-
-        // System.out.println(count);
 
     }
 }
