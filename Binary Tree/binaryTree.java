@@ -132,6 +132,7 @@ public class binaryTree {
 
             return sum;
         }
+
         // Height of tree
         public static int height(Node root) {
             if (root == null) {
@@ -158,6 +159,39 @@ public class binaryTree {
 
             return Math.max(diame3, Math.max(diame2, diame1));
 
+        }
+
+        // Diameter of a tree time complexity : O(n)
+        public static class treeinfo {
+            int ht;
+            int dia;
+
+            treeinfo(int ht, int dia) {
+                this.ht = ht;
+                this.dia = dia;
+            }
+        }
+
+        public static treeinfo diameter2(Node root) {
+
+            if(root == null){
+                return new treeinfo(0,0);
+            }
+
+            treeinfo left = diameter2(root.left);
+            treeinfo right = diameter2(root.right);
+
+            int myHeight = Math.max(left.ht, left.ht) + 1;
+
+            int dia1 = left.dia;
+            int dia2 = right.dia;
+            int dia3 = left.ht + right.ht +1 ;
+
+            int mydia = Math.max(Math.max(dia1,dia2),dia3);
+
+            treeinfo myinfo = new treeinfo(myHeight,mydia);
+
+            return myinfo;
         }
 
     }
@@ -191,6 +225,8 @@ public class binaryTree {
         System.out.println("Height of tree is : " + tree.height(root));
 
         System.out.println("Diameter of tree is : " + tree.diameter(root));
+
+        System.out.println("Diameter of tree ussing optimal approch : " + tree.diameter2(root).dia);
 
     }
 }
