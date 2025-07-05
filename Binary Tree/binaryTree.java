@@ -107,6 +107,47 @@ public class binaryTree {
 
         }
 
+        // sum of specif height node values
+        public static int sumOfKth(Node root, int level) {
+
+            if (level == 1) {
+                return root.data;
+            }
+            int count = 1;
+            int sum = 0;
+
+            Queue<Node> q = new LinkedList<>();
+            q.add(root);
+            q.add(null);
+
+            while (count != level) {
+                while (!q.isEmpty()) {
+                    Node currentNode = q.remove();
+                    if (currentNode == null) {
+                        System.out.println();
+                        if (q.isEmpty()) {
+                            break;
+                        } else {
+                            q.add(null);
+                            count++;
+                        }
+                    } else {
+                        sum += currentNode.data;
+                        if (currentNode.left != null) {
+                            q.add(currentNode.left);
+                        }
+                        if (currentNode.right != null) {
+                            q.add(currentNode.right);
+                        }
+                    }
+                }
+            }
+
+
+            return sum;
+
+        }
+
         // count of nodes in tree
         public static int countOfNodes(Node root) {
             if (root == null) {
@@ -174,8 +215,8 @@ public class binaryTree {
 
         public static treeinfo diameter2(Node root) {
 
-            if(root == null){
-                return new treeinfo(0,0);
+            if (root == null) {
+                return new treeinfo(0, 0);
             }
 
             treeinfo left = diameter2(root.left);
@@ -185,11 +226,11 @@ public class binaryTree {
 
             int dia1 = left.dia;
             int dia2 = right.dia;
-            int dia3 = left.ht + right.ht +1 ;
+            int dia3 = left.ht + right.ht + 1;
 
-            int mydia = Math.max(Math.max(dia1,dia2),dia3);
+            int mydia = Math.max(Math.max(dia1, dia2), dia3);
 
-            treeinfo myinfo = new treeinfo(myHeight,mydia);
+            treeinfo myinfo = new treeinfo(myHeight, mydia);
 
             return myinfo;
         }
@@ -227,6 +268,8 @@ public class binaryTree {
         System.out.println("Diameter of tree is : " + tree.diameter(root));
 
         System.out.println("Diameter of tree ussing optimal approch : " + tree.diameter2(root).dia);
+
+        System.out.println("sum of nth level nodes are : " + tree.sumOfKth(root,2));
 
     }
 }
