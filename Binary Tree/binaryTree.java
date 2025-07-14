@@ -269,7 +269,7 @@ public class binaryTree {
 
         System.out.println("Diameter of tree ussing optimal approch : " + tree.diameter2(root).dia);
 
-        // System.out.println("sum of nth level nodes are : " + tree.sumOfKth(root,2));
+        System.out.println("sum of nth level nodes are : " + tree.sumOfKth(root,2));
 
         
 
