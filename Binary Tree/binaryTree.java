@@ -263,7 +263,7 @@ public class binaryTree {
 
         System.out.println("sum of all nodes in tree : " + tree.sum(root));
 
-        System.out.println("Height of tree is : " + tree.height(root));
+        // System.out.println("Height of tree is : " + tree.height(root));
 
         System.out.println("Diameter of tree is : " + tree.diameter(root));
 
