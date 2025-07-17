@@ -257,11 +257,13 @@ public class binaryTree {
         tree.postorder(root);
 
         System.out.println("\nLevel order traversal in tree :");
-        tree.levelOrder(root);
+        tree.levelOrder(root+" ");
 
-        System.out.println("count of nodes in the tree is : " + tree.countOfNodes(root));
 
-        System.out.println("sum of all nodes in tree : " + tree.sum(root));
+
+        // System.out.println("count of nodes in the tree is : " + tree.countOfNodes(root));
+
+        // System.out.println("sum of all nodes in tree : " + tree.sum(root));
 
         // System.out.println("Height of tree is : " + tree.height(root));
 
