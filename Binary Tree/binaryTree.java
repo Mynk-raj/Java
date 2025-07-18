@@ -253,7 +253,7 @@ public class binaryTree {
         System.out.print("\nInorder traversal in tree : ");
         tree.inorder(root);
 
-        System.out.print("\nPostorder traversal in tree : ");
+        // System.out.print("\nPostorder traversal in tree : ");
         tree.postorder(root);
 
         System.out.println("\nLevel order traversal in tree :");
