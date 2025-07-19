@@ -273,6 +273,8 @@ public class binaryTree {
 
         // System.out.println("sum of nth level nodes are : " + tree.sumOfKth(root,2));
 
+
+        // this is known as demo
         
 
 
