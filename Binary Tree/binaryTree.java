@@ -257,6 +257,11 @@ public class binaryTree {
         tree.postorder(root);
 
         System.out.println("\nLevel order traversal in tree :");
+
+        for (type var : iterable) {
+            
+        }
+
         tree.levelOrder(root+" ");
 
 
